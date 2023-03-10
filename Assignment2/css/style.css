@@ -1,0 +1,124 @@
+/*
+Name:           Adam Kostandoff
+Date:           March 10, 2023
+Class:          Lib2024
+Description:    Assignment 2 - CSS FILE
+*/
+
+/* Styling for top header box */
+#header_box {
+    border-style:solid;
+    border-color:red;
+    border-width: 8px;
+    height:120px;
+    text-align:center;
+    background-color:#e3e3e3;
+    padding:20px;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+    font-weight:bold;
+    color:#525252;
+}
+
+.flex-container {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+
+/* Styling for article section with image */
+.article {
+    width:100%;
+    text-align:justify;
+    font-size:18px;
+    line-height:1.5em;
+}
+
+.left_column {
+    width:50%;
+    float:left;
+}
+
+.left_column > p {
+    padding-right:20px;
+}
+
+.right_column {
+    width:50%;
+    float:right;
+}
+
+.right_column > p {
+    padding-left:20px;
+}
+
+.inner1{
+    float:right;
+    width:100px;
+    height:294px;
+    margin-left:100px;
+    margin-top:100px;
+    margin-bottom:100px;
+    background:url(../images/logo200.png);
+    shape-outside: ellipse(100px 150px); 
+    background-position:0% 0%;
+}
+
+.inner2{
+    float:left;
+    width:100px;
+    height:294px;
+    margin-right:100px;
+    margin-top:100px;
+    margin-bottom:100px;
+    background:url(../images/logo200.png);
+    shape-outside: ellipse(100px 150px);
+    background-position:100% 0;
+}
+
+/* Styling for main section with ferrari and watermark background */
+.main_image {
+    background-image:url("../images/ak.png");
+    background-repeat:repeat;
+    text-align:center;
+}
+
+/* Styling for bottom grid */
+.bottom_grid {
+    display:grid;
+    overflow: auto;
+    background-color:lightcoral;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:10px;
+    margin-top:30px;
+}
+
+.bottom_grid > div {
+   background-color:#f1f1f1;
+    text-align:center;
+    margin:10px;
+    min-height:150px;
+}
+
+.bottom_grid > div > img {
+    max-height:90px;
+    padding-top:10px;
+}
+
+.bottom_grid > div > p {
+    font-weight:bold;
+    font-family:Arial;
+    font-size:15px;
+}
+
+/* Styling for footer */
+.footer {
+    margin-top:30px;
+}
+
+/* Showcase span tag */
+.footer > span {
+    font-weight:bold;
+}
