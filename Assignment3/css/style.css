@@ -1,0 +1,158 @@
+/*
+Name:           Adam Kostandoff
+Date:           March 19, 2023
+Class:          Lib2024
+Description:    Assignment 3 - CSS FILE
+*/
+
+/* Styling for top header box */
+#header_box {
+    border-style:solid;
+    border-color:red;
+    border-width: 2px;
+    height:120px;
+    text-align:center;
+    background-color:#e3e3e3;
+    padding:20px;
+    border-radius: 40px;
+}
+
+#header_box:hover{
+    border-radius:100px;
+    border-color:blue;
+    border-width:6px;
+    background-color:floralwhite;
+}
+
+/* Styling for balloons */
+
+.animations {
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+#balloon1 {
+    width:150px;
+    height:300px;
+}
+
+#balloon1:hover {
+    transform: scale(1.3, 1.3);
+}
+
+#balloon2 {
+    width:75px;
+    height:150px;
+}
+
+#balloon2:hover {
+    transform: translate(200px, -200px);
+    transition-duration:1s;
+    transition-property:transform;
+    
+}
+#balloon3 {
+    width:75px;
+    height:150px;
+    transform: scale(1.5);
+}
+
+#balloon4 {
+    width:150px;
+    height:300px;
+}
+
+#balloon4:hover {
+     transform: matrix(0,1,1,0,0,0);
+    transition-duration: 2s;
+    transition-property: transform;
+}
+
+#balloon5 {
+    width:150px;
+    height:300px;
+}
+
+#balloon5:hover {
+    transform: scale(1.5, 1.5);
+    transition-duration: 2s;
+    transition-property: transform;
+}
+
+#party1 {
+    width:400px;
+    height:300px;
+}
+
+#party1:hover {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+/* Demonstrate Z-index */
+
+.main_paragraph {
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.paragraph1 {
+    position: relative;
+    width:300px;
+    height:200px;
+    background-color:lightblue;
+    z-index:2;
+    border-style:solid;
+    border-color:darkblue;
+    padding:100px;
+}
+
+.paragraph2 {
+    position: relative;
+    padding:100px;
+    width:300px;
+    height:200px;
+    background-color:lightgreen;
+    margin-top:-20px;
+    margin-left:50px;
+    z-index:1;
+    border-style:dashed;
+    border-color:darkblue;
+}
+
+.link_block {
+    margin-top:50px;
+}
+
+.link_block > a {
+    font-size:20px;
+    color:blue;
+}
+
+.link_block > a:visited {
+    color:darkorange;
+    font-weight:bold;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+    font-weight:bold;
+    color:#525252;
+}
+
+.flex-container {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+
+/* Styling for footer */
+.footer {
+    margin-top:30px;
+}
+
+/* Showcase span tag */
+.footer > span {
+    font-weight:bold;
+}
