@@ -1,0 +1,105 @@
+<!--
+Name:           Adam Kostandoff
+Date:           April 16, 2023
+Class:          Lib2024
+Description:    Assignment 4 - HTML FILE
+-->
+
+<!-- Declare HTML doctype -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HTML Head tag -->
+    <head>
+        <title>Easy Temperature Converter</title>
+        
+        <!-- Include reference to CSS file with styling -->
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        
+        <!-- Meta tags to define metadata about the HTML document. -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Temp Converter">
+        <meta name="keywords" content="Temperature, Temp Converter">
+        <meta name="author" content="Adam Kostandoff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/temp.ico">
+    </head>
+    <!-- Close HTML Head tag -->
+    
+    <!-- Javascript for temp convert logic -->
+    <script>
+        function doConvert() {
+            var temp;
+            var temp_converted;
+            temp = document.getElementById("number_input").value;
+            
+            if (isNaN(temp)) {
+                document.getElementById("result").innerHTML = "";
+                alert("Erorr! You must enter a numeric value!");
+                
+            } else if (temp.length == 0) {
+                document.getElementById("result").innerHTML = "";
+                alert("Erorr! You must enter a value!");        
+                
+            } else {
+                // Proceed with temp conversion
+                
+                // Convert to C
+                temp_converted = (temp-32) / 1.8;
+                
+                // Round to whole number
+                temp_converted = Math.round(temp_converted);
+                
+                document.getElementById("result").innerHTML = temp_converted;
+            }
+            
+        }
+    </script>
+    
+    <!-- HTML Body tag -->
+    <body>
+        <!-- Use Flex container to separate sections on page -->
+        <div class="flex-container">
+        
+        <!-- Header section with red border -->
+        <div id="header_box">
+            <h1>Temp Converter</h1>
+        </div>
+        
+        <div class="main">
+            <table>
+                <tr>
+                    <td class="left">
+                        Enter a temperature in degrees Fahrenheit:
+                    </td>
+                    <td class="">
+                        <input id="number_input" >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="left">
+                        <button id="submit_button" onclick="doConvert()">Convert to Celsius</button>
+                    </td>
+                </tr>
+                <tr>
+                     <td class="left">
+                        Equivalent temperature in degrees Celsius:
+                    </td>
+                    <td id="result">
+                       
+                    </td>
+                </tr>
+                <tr>
+                     <td>
+                        <img class="thermometer" src="images/thermometer.png" >
+                     </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            &copy; <span>Adam Kostandoff</span> 2023    
+        </div>  
+    </div>
+        
+    </body>
+    <!-- Close HTML Body Tag -->
+</html>

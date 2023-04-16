@@ -1,0 +1,87 @@
+/*
+Name:           Adam Kostandoff
+Date:           April 16, 2023
+Class:          Lib2024
+Description:    Assignment 4 - CSS FILE
+*/
+
+/* Styling for top header box */
+#header_box {
+    border-style:solid;
+    border-color:blue;
+    border-width: 2px;
+    height:100px;
+    text-align:center;
+    background-color:#e3e3e3;
+    padding:10px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+    font-weight:bold;
+    color:#525252;
+}
+
+.flex-container {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+
+.main {
+    
+    font-size:18px;
+    height:400px;
+    width:600px;
+    padding:40px;
+    margin-top:150px;
+    background-color:lightgray;
+    margin: 0 auto;
+    margin-top:50px;
+}
+
+.left {
+    width:400px;
+    height:60px;
+}
+
+#number_input {
+    height:30px;
+    border-radius:10px;
+    padding-left:10px;
+}
+
+#result {
+    height:30px;
+    border-radius:0px;
+    border-color:gray;
+    text-align:center;
+    font-style:bold;
+    border-style:solid;
+    font-size:20px;
+    color:black; 
+}
+
+#submit_button {
+    height:50px;
+    width:200px;
+    border-radius:5px;
+    background-color:blue;
+    color:white;
+    font-size:15px;
+}
+
+.thermometer {
+    height:200px;
+}
+
+/* Styling for footer */
+.footer {
+    margin-top:30px;
+}
+
+/* Showcase span tag */
+.footer > span {
+    font-weight:bold;
+}
