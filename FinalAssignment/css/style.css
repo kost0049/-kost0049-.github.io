@@ -1,0 +1,257 @@
+/*
+Name:           Adam Kostandoff
+Date:           April 17, 2023
+Class:          Lib2024
+Description:    Final Assignment - CSS FILE
+*/
+
+body {
+    font-family:Arial;
+}
+
+/* Styling for top header box */
+#header_box {
+    border-style:solid;
+    border-color:lightgray;
+    border-width: 2px;
+    height:100px;
+    text-align:center;
+    background-color:#EEE;
+    padding:10px;
+}
+
+.page_content {
+    margin-top:80px;
+}
+
+.header_text {
+    width:100%;
+    text-align:center;
+    padding-top:120px;
+}
+
+.header_text_inner {
+    width: 250px;
+    height:50px;
+    background-color:white;
+    margin:0 auto;
+    font-size:30px;
+    padding-top:10px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+    font-weight:bold;
+    color:#525252;
+}
+
+/* Styling for header image */
+
+#header_image {
+    background-image:url("../images/header_image1.png");
+    opacity:1;
+    background-repeat:no-repeat;
+    width:100%;
+    height:300px;
+    
+}
+
+#header_image_programs {
+    background-image:url("../images/programs.png");
+    opacity:1;
+    background-repeat:no-repeat;
+    width:100%;
+    height:300px;
+    
+}
+
+#header_image_how {
+    background-image:url("../images/how.png");
+    opacity:1;
+    background-repeat:no-repeat;
+    width:100%;
+    height:300px;
+    
+}
+
+#header_image_contact {
+    background-image:url("../images/contact.jpeg");
+    opacity:1;
+    background-repeat:no-repeat;
+    width:100%;
+    height:300px;
+    background-size: 1800px 400px;
+    
+}
+
+/* Styling for programs grid */
+
+.grid_container {
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.bottom_grid {
+    display:grid;
+    overflow: auto;
+    background-color:teal;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:10px;
+    margin-top:30px;
+    margin-bottom:80px;
+    
+}
+.bottom_grid_contact {
+    display:grid;
+    overflow: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;
+    margin-top:30px;
+    margin-bottom:80px;
+    
+}
+
+
+.bottom_grid > div {
+   background-color:white;
+    text-align:center;
+    margin:10px;
+    min-height:150px;
+}
+
+.bottom_grid > div > img {
+    max-height:90px;
+    padding-top:10px;
+}
+
+.bottom_grid > div > p {
+    font-weight:bold;
+    font-family:Arial;
+    font-size:15px;
+}
+
+.javascript_block {
+    height:400px;
+    margin-bottom:200px;
+}
+/* Styling for Navigation Bar */
+
+#logo {
+
+}
+.nav_logo {
+    width:30px;
+    margin-bottom:-8px;
+}
+#navigation {
+    width:100%;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    font-family: Arial;
+    position: fixed;
+    background-color: teal;
+}
+
+.navigation-link {
+    display: inline-block;
+    width:100px;
+    height:70px;
+    color:white;
+    text-decoration: none;
+    line-height:70px;
+    text-align:center;
+}
+
+.nav-item:hover {
+    background-color:darkcyan;
+}
+
+.active_page {
+    background-color:darkcyan;
+}
+
+/* Styling for home page images */
+
+.home_images {
+    margin:0 auto;
+    padding-top:100px;
+    text-align:center;
+}
+.home_images > img {
+    width:400px;
+    height:250px;
+}
+
+.left_image { 
+    padding-right:30px;
+}
+
+.right_image {
+    padding-left:30px;
+}
+
+.home_text {
+    font-size:18px;
+    padding:50px;
+    line-height:35px;
+}
+
+.about_text {
+    font-size:18px;
+    padding: 50px;
+    line-height:35px;
+    background-color:#EEE;
+}
+
+.kids_container {
+    text-align:center;
+}
+.kids_image {
+    width:70%;
+}
+
+#submit_button {
+    height:50px;
+    width:200px;
+    border-radius:5px;
+    background-color:blue;
+    color:white;
+    font-size:15px;
+}
+
+.javascript1 {
+    height:55px;
+}
+.javascript2 {
+    height:55px;
+}
+.javascript3 {
+    height:55px;
+}
+.javascript4 {
+    height:55px;
+}
+.success {
+    color:green;
+    font-weight:bold;
+}
+.error {
+    color:red;
+    font-weight:bold;
+}
+#result {
+    height:40px;
+    width:200px;
+    padding-top:30px;
+}
+/* Styling for footer */
+.footer {
+    margin-top:30px;
+}
+
+/* Showcase span tag */
+.footer > span {
+    font-weight:bold;
+}

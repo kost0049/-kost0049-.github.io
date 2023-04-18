@@ -1,0 +1,110 @@
+<!--
+Name:           Adam Kostandoff
+Date:           April 17, 2023
+Class:          Lib2024
+Description:    Final Assignment - HTML FILE
+-->
+
+<!-- Declare HTML doctype -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HTML Head tag -->
+    <head>
+        <title>Fake Public Libray - How to Use</title>
+        
+        <!-- Include reference to CSS file with styling -->
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        
+        <!-- Meta tags to define metadata about the HTML document. -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Fake Public Library Website">
+        <meta name="keywords" content="Library, Books, Programs, Drop ins, programs">
+        <meta name="author" content="Adam Kostandoff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/book.ico">
+    </head>
+    <!-- Close HTML Head tag -->
+    
+    
+    <!-- Javascript for temp convert logic -->
+    <script>
+        function check() {
+            var isbn;
+            
+            isbn = document.getElementById("book_input").value;
+            
+            if (isbn.length == 0) {
+                document.getElementById("result").innerHTML = "";
+                alert("Erorr! You must enter a value!");        
+                
+            } else {
+                // Proceed
+                
+                if(isbn == "12345") {
+                    document.getElementById("result").innerHTML = "<span class='success'>BOOK IS AVAILABLE! :)</span>";
+                } else {
+                    document.getElementById("result").innerHTML = "<span class='error'>BOOK IS NOT VAILABLE! :(</span>";
+                }
+                
+            }
+            
+        }
+    </script>
+    
+    <!-- HTML Body tag -->
+    <body>
+        <!-- Navigation bar -->
+        <nav id="navigation">
+            <a id="logo" class="navigation-link" href="index.html">
+                <img class="nav_logo" src="images/book.jpg">
+            </a>
+            <a class="navigation-link nav-item" href="index.html">Home</a>
+            <a class="navigation-link nav-item" href="about.html">About Us</a>
+            <a class="navigation-link nav-item" href="programs.html">Programs</a>
+            <a class="navigation-link nav-item active_page" href="using.html">How To Use</a>
+            <a class="navigation-link nav-item" href="contact.html">Contact Us</a>
+        </nav>
+        <div class="page_content">
+                
+            <div id="header_image_how">
+                <div class="header_text">
+                    <div class="header_text_inner">How to Use</div>
+                </div>
+            </div>
+            
+            <!-- home page text section -->
+            <div class="about_text">
+            <p>
+
+Find the Book: The first step in checking out a book from Fake Public Library is to find the book you want to borrow. You can use our online catalog to search for books by title, author, or keyword, or you can browse the shelves in the library to find books that interest you. Once you've found the book you want to borrow, take note of the call number and location so you can find it easily.</p>
+                
+                <p>
+
+Check Out the Book: To check out a book, bring it to the circulation desk along with your library card. Our staff will scan your card and the book, and then stamp the due date on a slip inside the book. You can usually borrow books for up to three weeks, but the loan period may vary depending on the book and your borrowing history. Once you've checked out the book, you're free to take it home and enjoy it at your leisure. If you have any questions or need assistance with checking out a book, don't hesitate to ask our friendly staff for help! </p>
+
+            </div>
+             
+            <div class="javascript_block">
+                <h2> Check if book is available:</h2>
+                
+                <div class="javascript1">(Enter 12345 for a valid response, otherwise it will say not available)</div>
+                <div class="javascript2">
+                    Enter book ISBN: <input id="book_input" >
+                </div>
+                <div class="javascript3">
+                    <button id="submit_button" onclick="check()">Check if available</button>
+                
+                </div>
+                <div id="result"></div>
+            </div>
+            
+            <div class="kids_container">
+                <img class="kids_image" src="images/kids.jpeg">
+            </div>
+            <div class="footer">
+                &copy; <span>Adam Kostandoff</span> 2023    
+            </div>  
+        </div>
+    </body>
+    <!-- Close HTML Body Tag -->
+</html>
